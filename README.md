@@ -53,3 +53,18 @@ graph TD
     D --> E[Gemini API]
     D --> F[SQLite]
     B --> G[Redis]
+git clone https://github.com/Muneerali199/HealthAI.git
+cd HealthAI
+cd Frontend
+npm install
+npm run dev
+cd backend/nodejs
+npm install
+cp .env.example .env
+# Edit .env with your configurations
+cd ../python-ml
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+cp .env.example .env
+# Edit .env with your Gemini API key
